@@ -5,17 +5,34 @@
 # Run in development
 
 1. Clone the repository
+
 2. Run
 ```
 npm install
 ```
+
 3. Have Nest CLI installed
 ```
 npm i -g @nestjs/cli
 ```
+
 4. Run database
 ```
 docker-compose up -d
+```
+
+5. Clone the ```env.template``` file and rename the copy as ```.env```
+
+6. Complete the defined environment variables in ```.env```
+
+7. Run the app in dev mode:
+```
+npm run start:dev
+```
+
+8. Rebuild the database using the seed
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ### Stack
